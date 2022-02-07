@@ -19,7 +19,7 @@ def make_files(base_dir: str, input_files: int):
     inputs_dir = f'{base_dir}/inputs'
     outputs_dir = f'{base_dir}/outputs'
     for i in range(input_files):
-        command = f'touch {inputs_dir}/input_{i + 1}.txt && touch {outputs_dir}/output_{i + 1}.txt'
+        command = f'touch {inputs_dir}/{i + 1}.txt && touch {outputs_dir}/{i + 1}.txt'
         subprocess.run(command, shell=True, text=True)
 
 
