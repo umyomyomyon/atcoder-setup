@@ -14,7 +14,7 @@ def make_dirs(base_dir: str):
 
 
 def make_files(base_dir: str, input_files: int):
-    subprocess.run(f'cp ./run.py {base_dir}/run.py && touch {base_dir}/solve.py', shell=True, text=True)
+    subprocess.run(f'cp ./run.py {base_dir}/run.py && cp ./compare.py {base_dir}/compare.py && touch {base_dir}/solve.py', shell=True, text=True)
 
     inputs_dir = f'{base_dir}/inputs'
     outputs_dir = f'{base_dir}/outputs'
