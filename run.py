@@ -2,7 +2,7 @@ import os
 import sys
 import subprocess
 
-input_file_list = [input_file for input_file in os.listdir(path='./inputs') if 'input' in input_file]
+input_file_list = [input_file for input_file in os.listdir(path='./inputs') if '.txt' in input_file]
 
 
 def make_commands():
